@@ -187,7 +187,7 @@ export class App implements OnInit {
 
   teamMembers: TeamMember[] = [
     { name: 'Dra. Maria Bladé', title: 'Odontòloga Col·legiada', image: 'equip-polo-falset.png' },
-    { name: 'Dra. Elvira Gómez', title: 'Especialista en Ortodòncia', image: 'equip-polo-falset.png' },
+    { name: 'Dra. Elvira Gómez', title: 'Especialista en Ortodòncia', image: 'elvira-gomez-falset.jpeg' },
     { name: 'Dr. Enric Polo', title: 'Director i Implantòleg', image: 'equip-polo-falset.png' },
     { name: 'Hig. Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
   ];
