@@ -1,10 +1,13 @@
 		<header class="header" [class.scrolled]="isScrolled">
 			<div class="container">
 				<div class="header-content">
-					<div class="logo">
-						<img src="logo-polo-falset.png" alt="Clínica Dental E. Polo - Dentista a Falset">
-						<span class="logo-text">Clínica E. Polo</span>
-					</div>
+						<div class="logo">
+							<img src="logo-polo-falset.png" alt="Clínica Dental E. Polo - Dentista a Falset">
+							<div class="logo-text">
+								<div class="brand">Clínica <strong>E. Polo</strong></div>
+								<div class="tagline">Somriures al Priorat</div>
+							</div>
+						</div>
 					<button class="mobile-menu-btn" (click)="toggleMenu()" [class.active]="menuOpen">
 						<span></span>
 						<span></span>
@@ -16,6 +19,10 @@
 						<a href="#equip" (click)="closeMenu()">Qui som</a>
 						<a href="#contacte" (click)="closeMenu()">Contacte</a>
 					</nav>
+						<div class="header-actions">
+							<a class="phone" href="tel:977830988">📞 977 830 988</a>
+							<a class="header-cta" href="#contacte">Demana cita</a>
+						</div>
 				</div>
 			</div>
 		</header>
