@@ -43,10 +43,10 @@ export class HomeComponent implements OnInit {
   ];
 
   teamMembers: TeamMember[] = [
-    { name: 'Dra. Maria Bladé', title: 'Odontòloga Col·legiada', image: 'equip-polo-falset.png' },
-    { name: 'Dra. Elvira Gómez', title: 'Especialista en Ortodòncia', image: 'elvira-gomez-falset.jpeg' },
-    { name: 'Dr. Enric Polo', title: 'Director i Implantòleg', image: 'equip-polo-falset.png' },
-    { name: 'Hig. Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
+    { name: 'Maria Bladé', title: 'Odontòloga Col·legiada', image: 'maria-blade-falset.jpg' },
+    { name: 'Elvira Gómez', title: 'Especialista en Ortodòncia', image: 'elvira-gomez-falset.jpeg' },
+    { name: 'Maria Pallarès', title: 'Odontòloga General', image: 'maria-pallares-falset.jpg' },
+    { name: 'Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
   ];
 
   schedules: Schedule[] = [
