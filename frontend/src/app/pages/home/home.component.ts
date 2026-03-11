@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 interface Service {
-  icon: string;
+  image: string;
   title: string;
   description: string;
 }
@@ -32,14 +32,14 @@ export class HomeComponent implements OnInit {
   isOpen = false;
 
   services: Service[] = [
-    { icon: '🦷', title: 'Periodòncia', description: 'Tractem les malalties de les genives i l\'os que dona suport a les dents. Prevenim i curem la gingivitis i periodontitis per mantenir les teves dents fortes i saludables.' },
-    { icon: '⚕️', title: 'Implantologia', description: 'Substituïm les dents perdudes amb implants dentals de màxima qualitat. Recupera la funcionalitat i estètica del teu somriure amb solucions duradores i naturals.' },
-    { icon: '😁', title: 'Ortodòncia', description: 'Corregim la posició de les dents i la mandíbula amb tractaments d\'ortodòncia personalitzats. Brackets tradicionals o alineadors invisibles per aconseguir el somriure perfecte.' },
-    { icon: '🦴', title: 'Pròtesi', description: 'Dissenyem i col·loquem pròtesis dentals fixes i removibles de gran qualitat. Recupera la funcionalitat masticatòria i l\'estètica del teu somriure.' },
-    { icon: '🔬', title: 'Endodòncia', description: 'Tractem l\'interior de la dent per eliminar infeccions i salvar peces dentals. Endodòncies realitzades amb tecnologia de punta i màxima precisió.' },
-    { icon: '👶', title: 'Odontopediatria', description: 'Cuidem de la salut dental dels més petits amb tractaments adaptats i un ambient proper i familiar. Prevenció i tractament de caries infantils.' },
-    { icon: '✨', title: 'Estètica dental', description: 'Millorem l\'aparença del teu somriure amb blanquejaments dentals, caretes de porcellana i reconstruccions estètiques. Llueix un somriure blanc i radiant.' },
-    { icon: '🏥', title: 'Odontologia general', description: 'Revisions periòdiques, neteja dental professional, empastaments i tractaments preventius. Mantenim la teva salut bucodental en òptimes condicions.' }
+    { image: '/services/periodoncia.webp', title: 'Periodòncia', description: 'Tractem les malalties de les genives i l\'os que dona suport a les dents. Prevenim i curem la gingivitis i periodontitis per mantenir les teves dents fortes i saludables.' },
+    { image: '/services/ortodoncia.webp', title: 'Implantologia', description: 'Substituïm les dents perdudes amb implants dentals de màxima qualitat. Recupera la funcionalitat i estètica del teu somriure amb solucions duradores i naturals.' },
+    { image: '/services/ortodoncia.webp', title: 'Ortodòncia', description: 'Corregim la posició de les dents i la mandíbula amb tractaments d\'ortodòncia personalitzats. Brackets tradicionals o alineadors invisibles per aconseguir el somriure perfecte.' },
+    { image: '/services/ortodoncia.webp', title: 'Pròtesi', description: 'Dissenyem i col·loquem pròtesis dentals fixes i removibles de gran qualitat. Recupera la funcionalitat masticatòria i l\'estètica del teu somriure.' },
+    { image: '/services/ortodoncia.webp', title: 'Endodòncia', description: 'Tractem l\'interior de la dent per eliminar infeccions i salvar peces dentals. Endodòncies realitzades amb tecnologia de punta i màxima precisió.' },
+    { image: '/services/ortodoncia.webp', title: 'Odontopediatria', description: 'Cuidem de la salut dental dels més petits amb tractaments adaptats i un ambient proper i familiar. Prevenció i tractament de caries infantils.' },
+    { image: '/services/ortodoncia.webp', title: 'Estètica dental', description: 'Millorem l\'aparença del teu somriure amb blanquejaments dentals, caretes de porcellana i reconstruccions estètiques. Llueix un somriure blanc i radiant.' },
+    { image: '/services/ortodoncia.webp', title: 'Odontologia general', description: 'Revisions periòdiques, neteja dental professional, empastaments i tractaments preventius. Mantenim la teva salut bucodental en òptimes condicions.' }
   ];
 
   teamMembers: TeamMember[] = [
@@ -102,7 +102,8 @@ export class HomeComponent implements OnInit {
       threshold: 0.1
     });
     setTimeout(() => {
-      document.querySelectorAll('.service-card, .team-member, .info-block').forEach(el => {
+      // Modificat per detectar les noves targetes d'imatge .service-image-card
+      document.querySelectorAll('.service-image-card, .team-member, .info-block').forEach(el => {
         observer.observe(el);
       });
     }, 100);
