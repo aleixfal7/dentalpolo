@@ -433,16 +433,25 @@ section {
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .team-member {
+  width: min(300px, calc(33.333% - 20px));
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.4s ease;
+}
+
+.team-member:nth-child(4),
+.team-member:nth-child(5) {
+  width: min(300px, calc(33.333% - 20px));
 }
 
 .team-member.visible {
@@ -723,7 +732,7 @@ section {
   }
 
   .team-grid {
-    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .contact-grid {

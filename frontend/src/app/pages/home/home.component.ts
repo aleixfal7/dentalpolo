@@ -32,29 +32,30 @@ export class HomeComponent implements OnInit {
   isOpen = false;
 
   services: Service[] = [
-    { image: '/services/periodoncia.webp', title: 'Periodòncia', description: 'Tractem les malalties de les genives i l\'os que dona suport a les dents. Prevenim i curem la gingivitis i periodontitis per mantenir les teves dents fortes i saludables.' },
-    { image: '/services/ortodoncia.webp', title: 'Implantologia', description: 'Substituïm les dents perdudes amb implants dentals de màxima qualitat. Recupera la funcionalitat i estètica del teu somriure amb solucions duradores i naturals.' },
-    { image: '/services/ortodoncia.webp', title: 'Ortodòncia', description: 'Corregim la posició de les dents i la mandíbula amb tractaments d\'ortodòncia personalitzats. Brackets tradicionals o alineadors invisibles per aconseguir el somriure perfecte.' },
-    { image: '/services/ortodoncia.webp', title: 'Pròtesi', description: 'Dissenyem i col·loquem pròtesis dentals fixes i removibles de gran qualitat. Recupera la funcionalitat masticatòria i l\'estètica del teu somriure.' },
-    { image: '/services/ortodoncia.webp', title: 'Endodòncia', description: 'Tractem l\'interior de la dent per eliminar infeccions i salvar peces dentals. Endodòncies realitzades amb tecnologia de punta i màxima precisió.' },
-    { image: '/services/ortodoncia.webp', title: 'Odontopediatria', description: 'Cuidem de la salut dental dels més petits amb tractaments adaptats i un ambient proper i familiar. Prevenció i tractament de caries infantils.' },
-    { image: '/services/ortodoncia.webp', title: 'Estètica dental', description: 'Millorem l\'aparença del teu somriure amb blanquejaments dentals, caretes de porcellana i reconstruccions estètiques. Llueix un somriure blanc i radiant.' },
-    { image: '/services/ortodoncia.webp', title: 'Odontologia general', description: 'Revisions periòdiques, neteja dental professional, empastaments i tractaments preventius. Mantenim la teva salut bucodental en òptimes condicions.' }
+    { image: '/services/ortodoncia2.webp', title: 'Ortodòncia', description: 'Corregim la posició de les dents i la mandíbula amb tractaments d\'ortodòncia personalitzats. Brackets tradicionals o alineadors invisibles per aconseguir el somriure perfecte.' },
+    { image: '/services/estetica2.webp', title: 'Estètica dental', description: 'Millorem l\'aparença del teu somriure amb blanquejaments dentals, caretes de porcellana i reconstruccions estètiques. Llueix un somriure blanc i radiant.' },
+    { image: '/services/odontologia-general.webp', title: 'Odontologia general', description: 'Revisions periòdiques, neteja dental professional, empastaments i tractaments preventius. Mantenim la teva salut bucodental en òptimes condicions.' },
+    { image: '/services/periodoncia2.webp', title: 'Periodòncia', description: 'Tractem les malalties de les genives i l\'os que dona suport a les dents. Prevenim i curem la gingivitis i periodontitis per mantenir les teves dents fortes i saludables.' },
+    { image: '/services/odontopediatria.webp', title: 'Odontopediatria', description: 'Cuidem de la salut dental dels més petits amb tractaments adaptats i un ambient proper i familiar. Prevenció i tractament de caries infantils.' },
+    { image: '/services/implantacio-dental.webp', title: 'Implantologia', description: 'Substituïm les dents perdudes amb implants dentals de màxima qualitat. Recupera la funcionalitat i estètica del teu somriure amb solucions duradores i naturals.' },
+    { image: '/services/endodoncia.webp', title: 'Endodòncia', description: 'Tractem l\'interior de la dent per eliminar infeccions i salvar peces dentals. Endodòncies realitzades amb tecnologia de punta i màxima precisió.' },
+    { image: '/services/protesi-dental.webp', title: 'Prostodòncia', description: 'Dissenyem i col·loquem pròtesis dentals fixes i removibles de gran qualitat. Recupera la funcionalitat masticatòria i l\'estètica del teu somriure.' }
   ];
 
   teamMembers: TeamMember[] = [
-    { name: 'Maria Bladé', title: 'Odontòloga Col·legiada', image: 'maria-blade-falset.jpg' },
-    { name: 'Elvira Gómez', title: 'Especialista en Ortodòncia', image: 'elvira-gomez-falset.jpeg' },
-    { name: 'Maria Pallarès', title: 'Odontòloga General', image: 'maria-pallares-falset.jpg' },
+    { name: 'Maria Bladé', title: 'Ortodontista', image: 'maria-blade-falset.jpg' },
+    { name: 'Elvira Gómez', title: 'Ciriugia Oral i Periodontista', image: 'elvira-gomez-falset.jpeg' },
+    { name: 'Maria Pallarès', title: 'Odontòloga General i Odontopediatra', image: 'maria-pallares-falset.jpg' },
+    { name: 'Doctor Polo', title: 'Odontòleg General', image: 'equip-polo-falset.png' },    
     { name: 'Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
   ];
 
   schedules: Schedule[] = [
-    { day: 'Dilluns', hours: '9:00-13:00 i 15:00-17:00' },
-    { day: 'Dimarts', hours: '9:00-13:00 i 16:00-20:00' },
-    { day: 'Dimecres', hours: 'Tancat' },
-    { day: 'Dijous', hours: '9:00-13:00 i 15:00-17:00' },
-    { day: 'Divendres', hours: '9:00-13:00 i 15:00-17:00' },
+    { day: 'Dilluns', hours: '9:00-13:00 i 16:00-20:00' },
+    { day: 'Dimarts', hours: '9:00-13:00 i 16:00-19:00' },
+    { day: 'Dimecres', hours: '9:00-13:00 i 16:00-20:00' },
+    { day: 'Dijous', hours: '9:00-13:00 i 16:00-19:00' },
+    { day: 'Divendres', hours: '9:00-15:00' },
     { day: 'Dissabte', hours: 'Tancat' },
     { day: 'Diumenge', hours: 'Tancat' }
   ];
