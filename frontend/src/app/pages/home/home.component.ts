@@ -45,9 +45,9 @@ export class HomeComponent implements OnInit {
   teamMembers: TeamMember[] = [
     { name: 'Maria Bladé', title: 'Ortodontista', image: 'maria-blade-falset.jpg' },
     { name: 'Elvira Gómez', title: 'Ciriugia Oral i Periodontista', image: 'elvira-gomez-falset.jpeg' },
-    { name: 'Maria Pallarès', title: 'Odontòloga General i Odontopediatra', image: 'maria-pallares-falset.jpg' },
-    { name: 'Doctor Polo', title: 'Odontòleg General', image: 'equip-polo-falset.png' },    
-    { name: 'Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
+    { name: 'Maria Pallarès', title: 'Odontòloga General i Odontopediatra', image: 'maria-pallares-falset.jpg' }
+    // { name: 'Doctor Polo', title: 'Odontòleg General', image: 'equip-polo-falset.png' },    
+    // { name: 'Carmen Brull', title: 'Higienista Dental', image: 'equip-polo-falset.png' }
   ];
 
   schedules: Schedule[] = [
